@@ -1,0 +1,218 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'poppins'  , sans-serif;
+    text-decoration: none;
+    list-style: none;
+}
+body {
+    color: rgb(0, 0, 0);
+}
+.header {
+    position: absolute;
+    top: 0px;
+    left: 50px;
+    width: 100%;
+    padding: 30px 10%;
+    background: transparent(20px);
+    backdrop-filter: blur(10px);
+    display: flex;
+    z-index: 100;
+    background: rgba(0, 0, 0, 0.61);
+}
+.logo {
+    font-size: 26px;
+    color: aliceblue;
+    font-weight: 600;
+    transition: .7s ease-in-out;
+    position: absolute;
+    left: 28pt;
+    top: 40%;
+}
+.logo:hover {
+    color: rgb(18, 178, 219);
+    text-shadow: 0 0 25px rgba(0, 174, 255, 0.852);
+    transform: scale(1.1);
+}
+.image1 img {
+    border-radius: 50%;
+    position: absolute;
+    top: 2%;
+    left: 1%;
+}
+.home-img img {
+    border-radius: 50%;
+    position: absolute;
+    top: 30%;
+    left: 75%;
+    box-shadow: 50px rgb(0, 123, 255), 100px rgb(0, 106, 255), 150px purple, 200px purple;
+    box-shadow: 0px 0px 25px rgb(0, 145, 255),
+                 0px 0px 30px rgb(255, 0, 208),
+                 0px 0px 35px rgb(255, 0, 0),
+                 0px 0px 40px rgb(47, 0, 255);
+    transition: 0.5s ease-in-out;
+    justify-content: space-between;
+}
+.home-img img:hover {
+    transform: scale(1.1);
+}
+.navbar .li a {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 14px;
+    position: absolute;
+    right: 100%;
+    transition: 0.3s ease-in-out;
+    width: 200px;
+    justify-content: space-between;
+    right: 150pt;
+}
+.a:hover {
+    color: rgb(18, 178, 219);
+    text-shadow: 0 0 25px rgba(0, 174, 255, 0.852);
+    transform: scale(1.1);
+}
+.btn-box {
+    width: 445px;
+    height: 50px;
+    justify-content: space-between 100px;
+    position: absolute;
+    top: 60%;
+    left: 5%;
+}
+.btn-box a {
+    width: 250pt;
+    height: 100%;
+    background-color: aqua;
+    border: 2px solid aqua;
+    border-radius: 30px;
+    font-size: 25px;
+    color: rgb(28, 28, 28);
+    text-decoration: none;
+    font-weight: 400;
+    letter-spacing: 1px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    transition: 0.4s ease-in-out;
+}
+.btn-box a:hover {
+    color: azure;
+    border:  2px solid rgb(0, 70, 182);
+    background: transparent;
+    
+}
+.btn-box:nth-child(2) {
+    background: transparent;
+    color: rgb(0, 106, 255);
+}
+.home-sci {
+    position: absolute;
+    bottom: 40px;
+    width: 120px;
+    display: flex;
+    justify-content: space-between;
+    left: 30px;
+}
+.home-sci a {
+    display: inline-flex;
+    width: 40px;
+    height: 40px;
+    background: transparent;
+    border: 2px solid rgb(0, 128, 255);
+    border-radius: 50%;
+    font-size: 20px;
+    color: rgb(0, 162, 207);
+    text-decoration: none;
+    align-items: center;
+    justify-content: center;
+    
+}
+.contact_btn {
+    padding: 6px;
+    color: rgb(26, 26, 26);
+    margin-left: 2rem;
+    background-color: rgb(0, 143, 196);
+    border-radius: 30px;
+    font-size: 12pt;
+    cursor: pointer;
+    transition: 0.5s ease-in-out;
+    position: absolute;
+    top: 37px;
+    left: 1385px;
+}
+.contact_btn:hover {
+    color: rgb(0, 145, 255);
+    border:  2px solid rgb(0, 70, 182);
+    background: transparent;
+}
+li {
+    display: flex;
+    float: inline-start;
+    overflow: hidden;
+}
+li a {
+    color: azure;
+    padding: 15px;
+    display: block;
+    transition: 0.4s ease-in-out;
+}
+li a:hover {
+    color: rgb(17, 154, 204);
+    text-shadow: 0 0;
+    transform: scale(1.1);
+}
+.image-container ima {
+    width: 32vh;
+    height: 32vh;
+    color: brown;
+}
+.h2::before {
+    border-right: 2px solid rgb(0, 129, 228);
+    overflow: hidden;
+    animation: animate 2s linear infinite;
+}
+@keyframes animate {
+    0%, 10%, 100%
+    {
+        width: 0%;
+    }
+    90%
+    {
+        width: 36%;
+    }
+}
+h1 {
+    text-shadow: 0px 0px 10px rgb(0, 145, 255),
+                 0px 0px 20px rgb(0, 145, 255),
+                 0px 0px 40px rgb(0, 145, 255),
+                 0px 0px 50px rgb(0, 145, 255);
+    font-size: 20pt;
+    color: rgb(255, 255, 255);
+}
+.h3 {
+    
+}
+@keyframes colors {
+    0% {
+        background-color: brown;
+    }
+    50% {
+        background-color: rgb(255, 0, 0);
+    }
+    100% {
+        background-color: rgb(180, 0, 105);
+    }
+}
+.home-sci {
+    animation: bounce 2s infinite;
+    animation-duration: 2s; 
+  }
+  
+  @keyframes bounce {
+    0%, 100% {
+      transform: translateY(20); 
+    }
+    50% {
+      transform: translateY(-10px); 
+    }
+  }
